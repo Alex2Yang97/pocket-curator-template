@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+  .collection-card:hover,
+  .collection-card:focus-within {
+    transform: scale(1.015);
+  }
+}
+
+.collection-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
