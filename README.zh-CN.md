@@ -1,8 +1,14 @@
-# 袖珍策展人 (Pocket Curator)
+# 袖珍策展人模板 (Pocket Curator Template)
 
-“袖珍策展人” (Pocket Curator) 是一个为艺术爱好者和创作者打造的Web应用，旨在帮助他们快速策划、展示和分享自己的作品。它利用AI来分析作品，帮助用户加深对艺术的理解，拉近与艺术的距离。此外，它还提供了一个功能，可以即时将艺术作品呈现在商品上，生成效果图，为实现商业变现提供了可能。
+<img src="public/favicon.svg" alt="袖珍策展人 Logo" width="100" height="100">
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fppz-pro%2Fpocket-curator)
+[English](README.md) | [中文](README.zh-CN.md)
+
+这个仓库是构建你自己的袖珍策展人应用的模板。[“袖珍策展人” (Pocket Curator)](https://www.pocketcurator.art/) 是一个为艺术爱好者和创作者打造的Web应用，旨在帮助他们快速策划、展示和分享自己的作品。它利用AI来分析作品，帮助用户加深对艺术的理解，拉近与艺术的距离。此外，它还提供了一个功能，可以即时将艺术作品呈现在商品上，生成效果图，为实现商业变现提供了可能。
+
+这个模板提供了构建你自己的应用版本所需的所有代码和配置。
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fppz-pro%2Fpocket-curator-template)
 
 ## ✨ 主要功能
 
@@ -44,7 +50,7 @@
 
 ## 🛠️ 如何使用：构建你自己的 APP
 
-你可以轻松克隆并部署你自己的“袖珍策展人”。
+你可以轻松克隆并部署你自己的"袖珍策展人"，使用这个模板。
 
 ### 1. 设置 Supabase
 
@@ -75,9 +81,9 @@
 
 ## 💡 关于 "Vibe Coding" 的感想
 
-这个 App 或许不是一个好的“产品”，但它绝对是一个不错的 vibe coding 产物。
+这个模板或许不是一个好的"产品"，但它绝对是一个不错的 vibe coding 产物。
 
-这个 App 的想法诞生于某个周末我在逛艺术馆时的一次灵感闪现。当时我并没有深入思考它是否能解决实际的用户痛点，是否能变现，仅仅是出于好奇和兴趣，想“build for fun”，也想沉浸式地体验一次 vibe coding 的魔力。
+这个 App 的想法诞生于某个周末我在逛艺术馆时的一次灵感闪现。当时我并没有深入思考它是否能解决实际的用户痛点，是否能变现，仅仅是出于好奇和兴趣，想"build for fun"，也想沉浸式地体验一次 vibe coding 的魔力。
 
 接下来的四个周末和一些工作日的晚上，我一步步将它构建出来。我本人的背景是 Data Science / Machine Learning，以及部分后端开发，主要使用 Python。在开始这个项目之前，我从未写过一行 TypeScript，也几乎不了解一个 Web App 应该如何从零构建。
 
@@ -103,4 +109,4 @@
 
 - 最重要的一点：vibe coding 有局限性。不要因为它好玩、上头，就放弃真正的编程学习。
 
-对我而言，vibe coding 是我玩过最上头的“电脑游戏”。我会继续做更多产品。如果你也有想法，或者想交流什么，欢迎联系我。
+对我而言，vibe coding 是我玩过最上头的"电脑游戏"。我会继续做更多产品。如果你也有想法，或者想交流什么，欢迎联系我。

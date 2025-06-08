@@ -1,8 +1,14 @@
-# Pocket Curator
+# Pocket Curator Template
 
-Pocket Curator is a web application designed for art lovers and creators to quickly curate, display, and share their artwork. It leverages AI to analyze artworks, helping users deepen their understanding and connection to art. Additionally, it provides a feature to instantly visualize artwork on merchandise, offering a potential path to monetization.
+<img src="public/favicon.svg" alt="Pocket Curator Logo" width="100" height="100">
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fppz-pro%2Fpocket-curator)
+[English](README.md) | [中文](README.zh-CN.md)
+
+This repository is a template for building your own Pocket Curator application. [Pocket Curator](https://www.pocketcurator.art/) is a web application designed for art lovers and creators to quickly curate, display, and share their artwork. It leverages AI to analyze artworks, helping users deepen their understanding and connection to art. Additionally, it provides a feature to instantly visualize artwork on merchandise, offering a potential path to monetization.
+
+This template provides all the necessary code and configuration to build your own version of the application.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fppz-pro%2Fpocket-curator-template)
 
 ## ✨ Key Features
 
@@ -44,7 +50,7 @@ The project is a Next.js application built with TypeScript, structured to be mod
 
 ## 🛠️ Getting Started: Build Your Own App
 
-You can easily clone and deploy your own version of Pocket Curator.
+You can easily clone and deploy your own version of Pocket Curator using this template.
 
 ### 1. Set up Supabase
 
@@ -75,7 +81,7 @@ You can easily clone and deploy your own version of Pocket Curator.
 
 ## 💡 My Thoughts on "Vibe Coding"
 
-This app might not be a great "product," but it is definitely a good outcome of vibe coding.
+This template might not be a great "product," but it is definitely a good outcome of vibe coding.
 
 The idea for this app sparked one weekend during a visit to an art gallery. I didn't deeply consider whether it could solve real user pain points or be monetized. It was purely out of curiosity and interest—I wanted to "build for fun" and immerse myself in the magic of vibe coding.
 
