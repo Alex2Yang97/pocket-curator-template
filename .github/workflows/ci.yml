@@ -37,15 +37,15 @@ jobs:
           ${{ runner.os }}-pnpm-store-
           
     - name: Install dependencies
-      run: pnpm install
+      run: |
+        pnpm install
+        pnpm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-next
       
     - name: Type check
       run: pnpm tsc --noEmit
       
     - name: Lint
-      run: |
-        pnpm install
-        pnpm lint
+      run: pnpm lint
       
     - name: Build
       run: pnpm build 
