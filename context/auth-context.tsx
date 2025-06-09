@@ -25,16 +25,14 @@ export type User = {
 type AuthContextType = {
   user: User | null
   isLoading: boolean
-  // Temporarily disabled email login/registration
-  // login: (usernameOrEmail: string, password: string) => Promise<{ success: boolean; message: string }>
-  // register: (username: string, email: string, password: string) => Promise<{ success: boolean; message: string }>
+  login: (usernameOrEmail: string, password: string) => Promise<{ success: boolean; message: string }>
+  register: (username: string, email: string, password: string) => Promise<{ success: boolean; message: string }>
   logout: () => Promise<void>
   getUserCollections: () => Collection[]
   createUserCollection: (collection: Omit<Collection, "id" | "createdAt">) => string
   oauthLogin: (provider: "google" | "github") => Promise<void>
-  // Temporarily disabled password reset
-  // resetPassword: (email: string) => Promise<{ success: boolean; message: string }>
-  // updatePassword: (password: string) => Promise<{ success: boolean; message: string }>
+  resetPassword: (email: string) => Promise<{ success: boolean; message: string }>
+  updatePassword: (password: string) => Promise<{ success: boolean; message: string }>
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
@@ -162,7 +160,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return defaultCollectionId
   }
 
-  /* Temporarily disabled email registration
   const register = async (username: string, email: string, password: string) => {
     try {
       const { data, error } = await supabase.auth.signUp({
@@ -209,9 +206,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       return { success: false, message: err.message || "Registration failed" }
     }
   }
-  */
 
-  /* Temporarily disabled email login
   const login = async (usernameOrEmail: string, password: string) => {
     try {
       let email = usernameOrEmail
@@ -243,7 +238,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       return { success: false, message: err.message || "Login failed" }
     }
   }
-  */
 
   // logout: call supabase.auth.signOut
   const logout = async () => {
@@ -315,7 +309,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     })
   }
 
-  /* Temporarily disabled password reset
   // Reset password: send reset email via supabase
   const resetPassword = async (email: string) => {
     try {
@@ -345,21 +338,20 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       return { success: false, message: err.message || "Failed to update password" }
     }
   }
-  */
 
   return (
     <AuthContext.Provider
       value={{
         user,
         isLoading,
-        // login,
-        // register,
+        login,
+        register,
         logout,
         getUserCollections,
         createUserCollection,
         oauthLogin,
-        // resetPassword,
-        // updatePassword,
+        resetPassword,
+        updatePassword,
       }}
     >
       {children}
